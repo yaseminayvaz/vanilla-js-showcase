@@ -1,0 +1,173 @@
+body{
+    background: #f2f2f2;
+  
+}
+*{ 
+
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    
+}
+.showcase {
+    font-family:  'Roboto', sans-serif;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+
+        &__tabs{
+            padding: 13px;
+            width: 30%;
+        
+        &__title{
+            font-weight: 700;
+            font-size:clamp(17px, 2.1vw, 28px);
+        }
+        &__list{
+            list-style: none;
+            line-height: 1.5;
+            text-align: left;
+            padding: 0;
+            &>li{
+               cursor: pointer;
+               margin: 10px 0;
+               padding: 10px;
+               border-radius:3px ;
+               -webkit-border-radius:3px ;
+               -moz-border-radius:3px ;
+               -ms-border-radius:3px ;
+               -o-border-radius:3px ;
+               font-size: 17px;
+               display: -webkit-box;
+               -webkit-line-clamp: 2;
+               -webkit-box-orient: vertical;
+               overflow:hidden;
+               height: 38px;
+               &:hover{
+                  background-color: #dce5f5;
+                  color: #0059ff;
+                
+                }
+             
+            }
+    
+        }
+    }
+    &__slide{
+        width: 70%;
+        &__card{
+            border: 1px solid lightgray;
+            padding: 10px;
+            border-radius: 4px;        ;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+         
+            &__img{
+                img{
+                    max-width: 256px;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+}
+             
+
+            }
+            &__title{
+
+                .slide__title {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow:hidden;
+                    height: 38px;
+                }
+                .slide__price{
+                    background-color: #f2f2f2;
+                    font-size: clamp(14px, 1.1vw, 20px);
+                    font-weight: 700;
+                    padding: 15px 10px;
+                    border-radius:4px ;
+                    -webkit-border-radius:4px ;
+                    -moz-border-radius:4px ;
+                    -ms-border-radius:4px ;
+                    -o-border-radius:4px ;
+}
+            }
+            .slide__free__cargo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-transform: capitalize;
+                .free-cargo{
+                    content: url(/assets/img/svg/teslimat-icon.svg);
+                    margin: 5px;
+                    max-width: 30px;
+                    filter: invert(77%) sepia(16%) saturate(1617%) hue-rotate(83deg) brightness(90%) contrast(86%);
+                }
+            }
+        }
+     
+   
+
+     
+    }
+
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next,
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    color: gray !important;
+    background-color: #fff !important;
+    padding:5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size:clamp(17px, 2.1vw, 28px) !important;
+}
+@media screen and (max-width: 540px) {
+    .showcase {
+      display: flex;
+      flex-direction: column;
+      &__tabs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &__list{
+            display: flex;
+            overflow-x: scroll;
+            width: 100%;
+            overflow-y: hidden;
+            border-bottom: 1px solid #f2f2f2;
+            &>li{
+                min-width: 200px;
+            }
+        }
+      }
+    }   
+}
