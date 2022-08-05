@@ -45,7 +45,7 @@ const creatBookItemsHtml = (category) => {
    </p>
    <p class="slide__free__cargo">
      <i class="free-cargo"></i>
-    Ücretsiz Kargo
+     ${book.params.shippingFee == 'FREE' => 'Ücretsiz KArgo'}
 
    </p>
 

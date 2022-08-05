@@ -81,7 +81,7 @@ img {
 
 .showcase__slide__card {
   border: 1px solid lightgray;
-  padding: 10px;
+  padding: 13px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -192,6 +192,9 @@ img {
   }
   .showcase__tabs__list > li {
     min-width: 200px;
+  }
+  .showcase__slide {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
